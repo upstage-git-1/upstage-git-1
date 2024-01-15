@@ -1,4 +1,14 @@
 ##Pig_Dice_Game 입니다##
+import random
+
+# 초기화
+player1_score = 0
+player2_score = 0
+current_player = 1
+
+# 주사위 굴리기 함수
+def roll_dice():
+    return random.randint(1, 6)
 
 ## part 2 - while loop
 while player1_score < 100 and player2_score < 100:
@@ -21,5 +31,4 @@ while player1_score < 100 and player2_score < 100:
 
     # 다음 플레이어로 넘어가기
     current_player = 3 - current_player  # 1을 2로, 2를 1로 변경
-
 
