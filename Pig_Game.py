@@ -32,3 +32,10 @@ while player1_score < 100 and player2_score < 100:
     # 다음 플레이어로 넘어가기
     current_player = 3 - current_player  # 1을 2로, 2를 1로 변경
 
+# 게임 종료
+if player1_score >= 100:
+    print("Player 1 wins!")
+else:
+    print("Player 2 wins!")
+
+
